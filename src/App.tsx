@@ -49,10 +49,10 @@ function App() {
 
   return (
     <>
-        <Header/>
-        <Promo/>
-        <Gallery/>
-        <Footer/>
+        <Header navListItems={navListItems}/>
+        <Promo promoLabel={promoLabel} promoTitle={promoTitle} />
+        <Gallery galleryItems={galleryItems} />
+        <Footer brands={brands} company={company} socials={socials} />
     </>
   )
 }
