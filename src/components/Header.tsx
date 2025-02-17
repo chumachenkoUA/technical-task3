@@ -1,3 +1,13 @@
+interface navListItem{
+    title:string;
+    link:string;
+}
+
+interface headerProps {
+    navListItems: navListItem[];
+}
+
+
 
 function Header() {
 
