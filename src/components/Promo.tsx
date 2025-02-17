@@ -1,3 +1,7 @@
+interface promoProps {
+    promoLabel:string;
+    promoTitle:string;
+}
 
 function Promo() {
 
