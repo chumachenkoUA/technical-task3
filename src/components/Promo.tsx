@@ -3,13 +3,13 @@ interface promoProps {
     promoTitle:string;
 }
 
-function Promo() {
+function Promo({promoLabel, promoTitle}:promoProps) {
 
     return (
         <>
             <section className={"promo"}>
-                <aside className={"promo__label"}>BUSINESS thoughts 💭</aside>
-                <h1 className={"promo__title"}>For founders on building, growing, and selling your brand.</h1>
+                <aside className={"promo__label"}>{promoLabel}</aside>
+                <h1 className={"promo__title"}>{promoTitle}</h1>
             </section>
         </>
     )
