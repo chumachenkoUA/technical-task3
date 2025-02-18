@@ -18,7 +18,7 @@ function Header({navListItems}: headerProps) {
                 <nav className="main-nav">
                     <ul className="main-nav__list">
                         {navListItems.map(item => (
-                            <li className="main-nav__list-item">
+                            <li key={item.link+item.title} className="main-nav__list-item">
                                 <a href={item.link}>
                                     {item.title}
                                 </a>
