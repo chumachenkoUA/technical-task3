@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import {navListItems, promoLabel, promoTitle, galleryItems,brands,company,socials} from "./date.ts"
 import Promo from "./components/Promo.tsx";
 import Header from "./components/Header.tsx";
