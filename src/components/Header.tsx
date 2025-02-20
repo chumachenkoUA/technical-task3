@@ -14,12 +14,12 @@ function Header({navListItems}: headerProps) {
 
     return (
         <>
-            <header className="main-header">
-                <nav className="main-nav">
-                    <ul className="main-nav__list">
+            <header className="header">
+                <nav className="header__nav">
+                    <ul className="header__nav-list">
                         {navListItems.map(item => (
-                            <li key={item.link+item.title} className="main-nav__list-item">
-                                <a href={item.link}>
+                            <li key={item.link+item.title} className="header__nav-item">
+                                <a className={"header__nav-link"} href={item.link}>
                                     {item.title}
                                 </a>
                             </li>
@@ -27,6 +27,7 @@ function Header({navListItems}: headerProps) {
                     </ul>
                 </nav>
             </header>
+            <div className="header__line"/>
         </>
     )
 }
