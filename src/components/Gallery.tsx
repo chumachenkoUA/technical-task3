@@ -14,19 +14,21 @@ function Gallery({galleryItems}:galleryProps) {
 
     return (
         <>
-            <div className={"gallery"}>
-                <span className={"gallery__title"}></span>
+            <section className={"gallery"}>
+                <span className={"gallery__title"}>Explore the brands joining Pattern Brands, the sales process & the founders behind them.👇🏽</span>
                 <ul className={"gallery__list"}>
                     {galleryItems.map((item,index)=>(
                         <li className={"gallery__item"} key={index}>
                             <img className={"gallery__image"} src={item.src} alt={item.alt}/>
-                            <h2 className={"gallery__brand"}>{item.brand}</h2>
-                            <p className={"gallery__founders"}>{item.founders}</p>
-                        </li>
+                            <div className={"gallery__content"}>
+                                <h2 className={"gallery__brand"}>{item.brand}</h2>
+                                <p className={"gallery__founders"}>{item.founders}</p>
+                            </div>
+                            </li>
                     ))}
 
                 </ul>
-            </div>
+            </section>
         </>
     )
 }
