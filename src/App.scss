@@ -3,7 +3,7 @@
 }
 @import "blocks/header","blocks/promo","blocks/gallery","blocks/footer";
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1200px) {
   .promo {
     height: 572px;
     padding-left: 72px;
@@ -29,7 +29,8 @@
 
   .gallery__list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
+    grid-row-gap: 64px;
+    grid-column-gap: 60px;
   }
 
   .footer{
@@ -116,6 +117,7 @@
       gap: 70px;
     }
 
+
   }
 
   .footer {
@@ -163,14 +165,7 @@
     }
 
     &__copyright {
-      display: flex;
-      flex-direction: column;
       height: 64px;
-    }
-
-    &__copyright-content {
-      align-self: center;
-      margin-left: 0;
     }
   }
 }

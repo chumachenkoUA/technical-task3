@@ -15,7 +15,7 @@ function Gallery({galleryItems}:galleryProps) {
     return (
         <>
             <section className={"gallery"}>
-                <span className={"gallery__title"}>Explore the brands joining Pattern Brands, the sales process & the founders behind them.👇🏽</span>
+                <p className={"gallery__title"}>Explore the brands joining Pattern Brands, the sales process & the founders behind them.👇🏽</p>
                 <ul className={"gallery__list"}>
                     {galleryItems.map((item,index)=>(
                         <li className={"gallery__item"} key={index}>

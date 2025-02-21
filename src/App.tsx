@@ -1,5 +1,5 @@
 import './App.scss'
-import {navListItems, promoLabel, promoTitle, galleryItems,brands,company,socials} from "./date.ts"
+import { galleryItems} from "./date.ts"
 import Promo from "./components/Promo.tsx";
 import Header from "./components/Header.tsx";
 import Gallery from "./components/Gallery.tsx";
@@ -8,10 +8,10 @@ import Footer from "./components/Footer.tsx";
 function App() {
   return (
     <>
-        <Header navListItems={navListItems}/>
-        <Promo promoLabel={promoLabel} promoTitle={promoTitle} />
+        <Header/>
+        <Promo/>
         <Gallery galleryItems={galleryItems} />
-        <Footer brands={brands} company={company} socials={socials} />
+        <Footer/>
     </>
   )
 }

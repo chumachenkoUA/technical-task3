@@ -1,15 +1,11 @@
-interface promoProps {
-    promoLabel:string;
-    promoTitle:string;
-}
 
-function Promo({promoLabel, promoTitle}:promoProps) {
+function Promo() {
 
     return (
         <>
             <section className={"promo"}>
-                <aside className={"promo__label"}>{promoLabel}</aside>
-                <h1 className={"promo__title"}>{promoTitle}</h1>
+                <h2 className={"promo__label"}>BUSINESS thoughts 💭</h2>
+                <h1 className={"promo__title"}>For founders on building, growing, and selling your brand.</h1>
             </section>
         </>
     )

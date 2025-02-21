@@ -8,6 +8,8 @@
 
   &__title {
     width: clamp(295px,47.6vw,571px);
+    max-width: 87%;
+    word-wrap: break-word;
     height: 125px;
     font-weight: 700;
     @include fluid-text(18,32);
@@ -18,9 +20,10 @@
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, minmax(312px, 1fr));
-    grid-column-gap: 60px;
+    grid-column-gap: clamp(13px,0.05vw,60px);
     grid-row-gap: 66px;
     justify-items: center;
+    align-items: center;
   }
 
   &__item {

@@ -1,23 +1,3 @@
-export const brands = [
-    {title:"Open Spaces", link:"#"},
-    {title:"GIR", link:"#"},
-    {title:"Letterfolk", link:"#"},
-    {title:"Yield", link:"#"},
-    {title:"Poketo", link:"#"},
-    {title:"Equal Parts", link:"#"}
-];
-
-export const company = [
-    {title:"Careers", link:"#"},
-    {title:"Press", link:"#"},
-];
-
-export const socials = [
-    {title:"Instagram", link:"#"},
-    {title:"Twitter", link:"#"}
-];
-
-
 export const galleryItems = [
     {src:"/GIR_OneYearIn.png", alt:"GIR: One Year In",brand:"GIR: One Year In",founders:"Case Study"},
     {src:"/IntroducingOnsen.png", alt:"Introducing Onsen",brand:"Introducing Onsen",founders:"new additions"},
@@ -28,15 +8,4 @@ export const galleryItems = [
     {src:"/Pattern's2022Update.png", alt:"Pattern's 2022 Update",brand:"Pattern's 2022 Update",founders:"THOUGHT LEADERSHIP"},
     {src:"/IntroducingYield.png", alt:"Introducing Yield",brand:"Introducing Yield",founders:"New Additions"},
     {src:"/IntroducingPoketo.png", alt:"Introducing Poketo",brand:"Introducing Poketo",founders:"New additions"},
-];
-
-
-export const promoLabel = "BUSINESS thoughts 💭";
-export const promoTitle = "For founders on building, growing, and selling your brand.";
-
-
-export const navListItems = [
-    {title:"Blog", link:"#"},
-    {title:"Press", link:"#"},
-    {title:"Join us", link:"#"},
 ];

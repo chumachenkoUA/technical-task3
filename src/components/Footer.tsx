@@ -1,14 +1,4 @@
-interface footerItem {
-    title: string;
-    link: string;
-}
-interface footerProps {
-    brands:footerItem[];
-    company: footerItem[];
-    socials: footerItem[];
-}
-
-function Footer({brands,company,socials}: footerProps) {
+function Footer() {
 
     return (
         <>
@@ -25,28 +15,45 @@ function Footer({brands,company,socials}: footerProps) {
                     </div>
                     <div className={"footer__lists"}>
                         <ul className={"footer__list"}>
-                            {brands.map((item, index) => (
-                                <li key={index} className={"footer__item"}>
-                                    <a className={"footer__link"} href={item.link}>{item.title}</a>
-                                </li>
-                            ))}
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Open Spaces</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>GIR</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Letterfolk</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Yield</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Poketo</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Equal Parts</a>
+                            </li>
+
                         </ul>
 
                         <ul className={"footer__list"}>
-                            {company.map((item, index) => (
-                                <li key={index} className={"footer__item"}>
-                                    <a className={"footer__link"} href={item.link}>{item.title}</a>
-                                </li>
-                            ))}
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Careers</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Press</a>
+                            </li>
                         </ul>
 
                         <ul className={"footer__list"}>
-                            {socials.map((item, index) => (
-                                <li key={index} className={"footer__item"}>
-                                    <a className={"footer__link"} href={item.link}>{item.title}</a>
-                                </li>
-                            ))}
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Instagram</a>
+                            </li>
+                            <li className={"footer__item"}>
+                                <a className={"footer__link"} href={"#"}>Twitter</a>
+                            </li>
                         </ul>
+
                         <address className={"footer__list-address"}>
                             <a className={"footer__link"} href={"#"}>
                                 228 Park Ave S.<br/>
@@ -58,7 +65,6 @@ function Footer({brands,company,socials}: footerProps) {
                 </div>
 
                 <div className={"footer__copyright"}>
-                    <div className={"footer-line"}/>
                    <div className={"footer__copyright-content"}> &copy; 2025 Pattern Brands</div>
                 </div>
             </footer>

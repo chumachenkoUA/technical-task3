@@ -17,6 +17,8 @@
 
   &__title {
     width: clamp(342.4px, 70.6vw, 848px);
+    max-width: 90%;
+    word-wrap: break-word;
     @include fluid-text(32,80);
     line-height: clamp(44px, 7.3vw, 88px);
     font-weight: 700;
